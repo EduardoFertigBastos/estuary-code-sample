@@ -49,8 +49,8 @@ export const AuthProvider: React.FC<PropsWithChildren<{}>> = ({ children }) => {
     const response = await api.post('/login', { email, password });
     const { token, user } = response.data;
    
-    localStorage.setItem('@INNOSCRIPTA:token', token);
-    localStorage.setItem('@INNOSCRIPTA:user', JSON.stringify(user));
+    localStorage.setItem('@PFCLI:token', token);
+    localStorage.setItem('@PFCLI:user', JSON.stringify(user));
 
     api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
@@ -58,16 +58,16 @@ export const AuthProvider: React.FC<PropsWithChildren<{}>> = ({ children }) => {
   }, []);
 
   const signOut = useCallback(() => {
-    localStorage.removeItem('@INNOSCRIPTA:token');
-    localStorage.removeItem('@INNOSCRIPTA:user');
-    localStorage.removeItem('@INNOSCRIPTA:settings');
+    localStorage.removeItem('@PFCLI:token');
+    localStorage.removeItem('@PFCLI:user');
+    localStorage.removeItem('@PFCLI:settings');
 
     setData({} as IAuthState);
   }, []);
 
   const updateUser = useCallback(
     (user: IUser) => {
-      localStorage.setItem('@INNOSCRIPTA:user', JSON.stringify(user));
+      localStorage.setItem('@PFCLI:user', JSON.stringify(user));
 
       setData({
         token: data.token,
