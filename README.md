@@ -8,23 +8,33 @@
 
 Thats the navbar that I used on Internal Anonymous Assessment project. Its projected to be responsive and it works the same way on desktop and on mobile versions. Clicking on Hamburguer Icon, a Drawer its opened on the left side giving access to the menu. Some components from Material UI lib were used there.
 
+Navbar closed on desktop
+![Navbar closed on desktop](docs/desktop-menu-closed.png)
+
+Navbar opened on desktop
+![Navbar opened on desktop](docs/desktop-menu-opened.png)
+
+Navbar opened on mobile <br>
+![Navbar opened on mobile](docs/mobile-menu-opened.png)
+
 #### Tooltip
 
 Thats the tooltip that shows the validation erros after sending a form. Its showed on the inputs and selects components of the application
 
-### Pages
+Tooltip Closed <br>
+![Tooltip Closed](docs/tooltip-closed.png)
 
-#### Groups List
+Tooltip Opened
+![Tooltip Opened](docs/tooltip-opened.png)
 
-Thats the page that present the existent groups on a table component (The table component will be shown on the PointsForSpecialDietPeople components)
+#### Select
 
-## Points For Special Diet People
+Its a select that can be normal or it can have multiple items. <br> 
+You can select the options normally, or you can select a checkbox on the left of the item (by config). <br> 
+The items can be showed normally. Example "Item 1, Item 2, Item 3", or they can be shown with chips. <br> 
+It can have a max options limit to be selected.
 
-### Components
-
-#### CardProduct
-
-Thats the card product component that represents each product on the dashboard of the application.
+![Select Component](docs/multiple-select.png)
 
 #### Datatable
 
@@ -38,12 +48,26 @@ It can have a dense button to make it more dense.<br>
 
 It saves the dense and rows per page settings on the localStorage.
 
-#### Select
+![datatable component](docs/list.png)
 
-Its a select that can be normal or it can have multiple items. <br> 
-You can select the options normally, or you can select a checkbox on the left of the item (by config). <br> 
-The items can be showed normally. Example "Item 1, Item 2, Item 3", or they can be shown with chips. <br> 
-It can have a max options limit to be selected.
+
+### Pages
+
+#### Groups List
+
+Thats the page that present the existent groups on a table component (The table component will be shown on the PointsForSpecialDietPeople components)
+
+![Groups list](docs/list.png)
+
+## Points For Special Diet People
+
+### Components
+
+#### CardProduct
+
+Thats the card product component that represents each product on the dashboard of the application.
+
+![Card Product Component](docs/card-product.png)
 
 ### Context
 
@@ -61,6 +85,10 @@ Its a context to retrieve user's settings from the database. It can return the s
 
 Thats the page that allows the user to create a new product inside the application
 
+![Create Product Page](docs/create-product.png)
+
 #### ListProduct
 
 This is the page that allows users to list their products in a table.
+
+(It a simple page with list, the same way it was presented on the Datatable component)
